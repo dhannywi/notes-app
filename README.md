@@ -4,12 +4,12 @@ Note-taking application created using Flask
 
 # Installation
 
+This project was created using `Python 3.10.6`
+
 Clone repository
 
 - `git clone https://github.com/dhannywi/notes-app.git`
 - `cd notes-app`
-
-This project was created using `Python 3.10.6`
 
 Install and create virtual environment
 
