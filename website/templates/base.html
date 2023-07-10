@@ -17,10 +17,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <div class="navbar-nav">
+                    {% if user.is_authenticated %}
                     <a class="nav-item nav-link" id="home" href="/">Home</a>
                     <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+                    {% else %}
                     <a class="nav-item nav-link" id="login" href="/login">Login</a>
                     <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
+                    {% endif %}
                 </div>
             </div>
         </nav>
@@ -62,6 +65,13 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
         
+        
+        <script
+            type="text/javascript"
+            src="{{ url_for('static', filename='index.js') }}"
+        ></script>
+
+        <!-- new version, add javascript function directly
         {% block javascript %}
         <script type="text/javascript">
             function deleteNote(noteId) {
@@ -74,5 +84,7 @@
             }
         </script>
         {% endblock %}
+        -->
+
     </body>
 </html>
