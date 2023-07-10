@@ -35,10 +35,3 @@ def create_app():
     return User.query.get(int(id))
   
   return app
-
-""" Flask-SQLAlchemy 3 no longer accepts an app argument to methods like create_all.
-def create_database(app):
-  if not path.exists('website/' + DB_NAME):
-      db.create_all(app=app)
-      print('Created Database!')
-"""
