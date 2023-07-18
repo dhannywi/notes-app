@@ -11,11 +11,10 @@ Clone repository
 - `git clone https://github.com/dhannywi/notes-app.git`
 - `cd notes-app`
 
-Install and create virtual environment
+Install and create virtual environment using pipenv
 
-- `pip install python3.10-venv`
-- `python3 -m venv .venv`
-- `. .venv/bin/activate`
+- `pip install --user pipenv`
+- `pipenv shell`
 
 Install dependencies
 
